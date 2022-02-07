@@ -358,6 +358,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: AppleTree
       objectReference: {fileID: 0}
+    - target: {fileID: 7595071015899085771, guid: 11489c87825c2064c81dd50223f1c6cd,
+        type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595071015899085771, guid: 11489c87825c2064c81dd50223f1c6cd,
+        type: 3}
+      propertyPath: secondsBetweenAppleDrops
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11489c87825c2064c81dd50223f1c6cd, type: 3}
 --- !u!1 &611678114

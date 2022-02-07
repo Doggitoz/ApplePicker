@@ -2,7 +2,7 @@
  * Created By: Coleton Wheeler
  * Date Created: 1/31/22
  * 
- * Last Edited By: N/A
+ * Last Edited By: 2/7/22
  * Date Edited: 1/31/22
  * 
  * Description: Controls apple tree and movement
@@ -29,8 +29,11 @@ public class TreeScript : MonoBehaviour
     {
         GameObject apple = Instantiate<GameObject>(applePrefab);
         Vector3 applePos = transform.position;
+        float random = Random.Range(0.8f, 1.2f);
+        Vector3 randomAppleSize = new Vector3(random, random, random);
         applePos.y += 3; //My tree was weird and spawned them below
         apple.transform.position = applePos;
+        apple.transform.localScale = randomAppleSize;
         Invoke("DropApple", secondsBetweenAppleDrops);
     }
 

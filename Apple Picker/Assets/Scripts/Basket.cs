@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Basket : MonoBehaviour
 {
     [Header("Set Dynamically")]
+    [SerializeField] private GameObject basket;
     [SerializeField] private Text scoreGT;
 
     private void Start()
@@ -42,6 +43,8 @@ public class Basket : MonoBehaviour
             {
                 HighScore.score = score;
             }
+            float basketSize = Mathf.Clamp(((50000f - score) / 10000f), 2f, 5f);
+            basket.transform.localScale = new Vector3(basketSize, transform.localScale.y, transform.localScale.z);
         }
     }
 }
